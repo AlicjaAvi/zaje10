@@ -33,7 +33,7 @@ jobs:
       run: uv run ruff check main_demo.py --exit-zero
 
     - name: Generate Docs
-      run: uvx pdoc src/ -o ./docs-output 
+      run: uv run pdoc src/ -o ./docs-output 
 
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
